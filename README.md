@@ -1,15 +1,15 @@
 # VesselAnalysis
 
-`vesselanalysis.m` is a MATLAB pipeline for **semi-automatic blood vessel analysis** from 2D images.  
+`vesselanalysis.m` is a MATLAB pipeline for semi-automatic blood vessel analysis from 2D images.  
 
 Pipeline:
 
 - Batches through all images in a folder  
-- Uses a **single, user-defined global threshold** (chosen via a slider GUI)  
+- Uses a single, user-defined global threshold 
 - Segments vessels, fills holes, and bridges gaps  
 - Skeletonizes the vessel network and splits it into individual segments  
-- Samples multiple **cross-sections perpendicular to each vessel segment**  
-- Outputs per-segment vessel **diameter, length, and approximate area**, plus QC overlays
+- Samples multiple cross-sections perpendicular to each vessel segment  
+- Outputs per-segment vessel diameter, length, and approximate area, plus QC overlays
 
 ---
 
@@ -17,9 +17,9 @@ Pipeline:
 
 The script is designed for analysis of 2D vessel images (e.g., fluorescence). It provides:
 
-- **Semi-automatic control** over segmentation via interactive threshold selection  
-- **Consistent scaling** into physical units (µm and µm²)  
-- **Per-segment metrics**: mean diameter, variance, length, and approximate 2D area  
+- Semi-automatic control over segmentation via interactive threshold selection  
+- Consistent scaling into physical units (µm and µm²)  
+- Per-segment metrics: mean diameter, variance, length, and approximate 2D area  
 
 ---
 
